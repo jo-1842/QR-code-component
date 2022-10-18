@@ -58,3 +58,29 @@ h2{
 .attribution p {
     padding: 3px;
 }
+
+
+
+    /* Landscape mobile */
+@media only screen and (orientation: landscape) {
+  
+   .main-container {
+    min-width: 90vw;
+    min-height: 95vh;
+    margin: auto;
+  }
+  
+   :root{
+    font-size: 0.5em;
+  }
+
+   .QR-container {
+    margin: 2% 0 0 0;
+   }
+
+   h2{
+    padding: 0 auto;
+    margin: 0 auto;
+   }
+  
+}
