@@ -1,0 +1,60 @@
+:root{
+    --grayish-blue: hsl(220, 15%, 55%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    height: 100%;
+    background-color: var(--light-gray);
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+}
+
+.main-container{
+    background-color: var(--white);
+    border-radius: 1.2em;
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    margin: 15vh auto 0 auto;
+    max-height: 65vh;
+
+}
+
+.QR-container{
+    margin: 5%;
+      
+}
+
+.QR-container img{
+    border-radius: 0.9em;
+    max-height: 50vh;
+    max-width: 50vh;
+}
+
+.main-container h2, p{
+    margin: 0 1.2rem;
+    padding: 0.5rem;
+    
+}
+
+h2{
+    font-size: 25px;
+}
+
+.instructions{
+    color: var(--grayish-blue);
+    font-size: 18px;
+    
+}
+
+.attribution {
+    font-size: 11px;
+}
+
+.attribution p {
+    padding: 3px;
+}
