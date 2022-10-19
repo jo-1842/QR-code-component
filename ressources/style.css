@@ -5,22 +5,31 @@
     --dark-blue: hsl(218, 44%, 22%);
 }
 
-body {
-    height: 100%;
+body {    
     background-color: var(--light-gray);
     text-align: center;
     font-family: 'Outfit', sans-serif;
     font-size: 15px;
 }
 
+
 .main-container{
+    display: flex;
+    flex-direction: columns;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.card-container{
     background-color: var(--white);
     border-radius: 1.2em;
     display: flex;
     flex-direction: column;
+    width: 100%;
     max-width: 375px;
-    margin: 15vh auto 0 auto;
-    max-height: 65vh;
+    margin: auto;
+    height: 62vh;
 
 }
 
@@ -35,7 +44,7 @@ body {
     max-width: 50vh;
 }
 
-.main-container h2, p{
+.card-container h2, p{
     margin: 0 1.2rem;
     padding: 0.5rem;
     
@@ -59,16 +68,29 @@ h2{
     padding: 3px;
 }
 
+ 
+    /* Mobile */
+
+@media only screen and (max-device-height: 950px) {
+    .card-container{ 
+       max-height: 95vh;
+       height: 90vh;
+       color: red;
+    }
+}
 
 
     /* Landscape mobile */
-@media only screen and (orientation: landscape) {
+@media only screen and (max-device-width: 1000px)
+                   and (orientation: landscape) {
   
-   .main-container {
-    min-width: 90vw;
-    min-height: 95vh;
+   .card-container {
+    min-width: 95vw;
+    height: 90vh;
     margin: auto;
+    color: green;
   }
+
   
    :root{
     font-size: 0.5em;
@@ -82,5 +104,6 @@ h2{
     padding: 0 auto;
     margin: 0 auto;
    }
-  
 }
+
+
