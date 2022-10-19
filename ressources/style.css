@@ -75,8 +75,7 @@ h2{
     .card-container{ 
        max-height: 95vh;
        height: 90vh;
-       color: red;
-    }
+           }
 }
 
 
@@ -88,7 +87,7 @@ h2{
     min-width: 95vw;
     height: 90vh;
     margin: auto;
-    color: green;
+    
   }
 
   
